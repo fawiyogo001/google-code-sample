@@ -162,8 +162,7 @@ def test_pause_video_show_playing(capfd):
     out, err = capfd.readouterr()
     lines = out.splitlines()
     assert len(lines) == 3
-    assert "Currently playing: Amazing Cats (amazing_cats_video_id) " \
-           "[#cat #animal] - PAUSED" in lines[2]
+    assert "Currently playing: Amazing Cats (amazing_cats_video_id) [#cat #animal] - PAUSED" in lines[2]
 
 
 def test_pause_video_play_video(capfd):
